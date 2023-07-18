@@ -5,7 +5,7 @@ import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
   { title: "Features", url: "#features" },
-  { title: "rent", url: "/rent" },
+  { title: "Rent!", url: "/rent" },
 ];
 ---
 
@@ -25,7 +25,7 @@ const navItems: Array<NavItem> = [
           {
             navItems.map(({ title, url }) => (
               <li>
-                  <a class="text-sm" href={url}>
+                  {title=="rent" ? <a class="text-sm text-primary" href={url}> : <a class="text-sm" href={url}>}
                   {title}
                 </a>
               </li>
@@ -57,7 +57,7 @@ const navItems: Array<NavItem> = [
             </button>
           </header>
           <div class="flex justify-center">
-            <Icon name="logomark" class="h-16" />
+            <h3>Starlink 4 rent</h3>
           </div>
           <nav>
             <ul class="flex flex-col">
