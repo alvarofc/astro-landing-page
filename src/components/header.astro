@@ -22,15 +22,16 @@ const navItems: Array<NavItem> = [
     <div class="flex items-center gap-6">
       <nav class="hidden sm:block">
         <ul class="flex items-center gap-6">
-          {
-            navItems.map(({ title, url }) => (
+          
+            
+            <li> <a class="text-sm text-primary" href="#features"> Features</a> </li>
               <li>
-                  {title=="rent" ? <a class="text-sm text-primary" href={url}> : <a class="text-sm" href={url}>}
-                  {title}
+                  <a class="text-sm text-primary" href="/rent"> 
+                  "Rent"
                 </a>
               </li>
-            ))
-          }
+            
+          
         </ul>
       </nav>
       <button
