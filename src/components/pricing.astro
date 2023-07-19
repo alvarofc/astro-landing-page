@@ -2,22 +2,27 @@
 ---
 import ContentSection from "~/components/content-section.astro";
 ---
-<ContentSection title="prices" id="prices">
+<ContentSection title="Prices" id="prices">
+<Fragment slot="lead">
+    Say goodbye to slow internet and hello to Starlink! 
+    <span class="text-primary">Lightning-fast</span> speeds and <span class="text-primary">low lattency</span> anywhere.
+    Rent your Starlink now!
+</Fragment>
 <div class="flex flex-col md:flex-row justify-center items-center">
     <div class="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg px-4 py-6 m-4">
-        <h2 class="text-2xl font-bold text-gray-800">Per day</h2>
+        <h2 class="text-2xl font-bold text-gray-800">Daily</h2>
         <h3 class="text-gray-500 text-3xl font-bold">20 €<span class="text-gray-600 text-lg">/ day</span></h3>
        
         
     </div>
     <div class="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg px-4 py-6 m-4">
-        <h2 class="text-2xl font-bold text-gray-800">More than one week</h2>
+        <h2 class="text-2xl font-bold text-gray-800">Weekly</h2>
         <h3 class="text-gray-500 text-3xl font-bold">17 €<span class="text-gray-600 text-lg">/ day</span></h3>
      
         
     </div>
     <div class="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg px-4 py-6 m-4">
-        <h2 class="text-2xl font-bold text-gray-800">One month or more</h2>
+        <h2 class="text-2xl font-bold text-gray-800">Long stay</h2>
         <h3 class="text-gray-500 text-3xl font-bold">15 €<span class="text-gray-600 text-lg">/ day</span></h3>
        
         
